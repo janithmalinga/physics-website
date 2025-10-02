@@ -1,0 +1,31 @@
+title: Physics in Sinhala
+description: විද්‍යාත්මක ලිපි සිංහලෙන් (Physics Articles in Sinhala)
+baseurl: ""  # Leave empty for GitHub Pages
+url: "https://yourusername.github.io/physics-blog"  # Replace with your URL
+
+# Theme (free, simple blog)
+theme: minima
+
+# Plugins for auto-blog
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Sinhala language support (UTF-8 for Sinhala script)
+encoding: UTF-8
+
+# Collections: Treat /articles/ as blog posts
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:title/
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: post
+      author: Your Name  # Change to yours
+      date: 2025-10-03  # Auto-updates from file
